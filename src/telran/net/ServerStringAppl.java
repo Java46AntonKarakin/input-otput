@@ -4,6 +4,7 @@ import java.net.*;
 public class ServerStringAppl {
 public static int PORT=3000;
 	public static void main(String[] args) throws Exception{
+		@SuppressWarnings("resource")
 		ServerSocket serverSocket = new ServerSocket(PORT);
 		System.out.println("Server is listening to connections on port " + PORT);
 		while(true) {
